@@ -44,7 +44,9 @@ function reset(){
 }
 
 function complete(){
-
-
+    console.log("컴플리트 버튼 활성화 됨");
+    url =encodeURI ="Main.html?"+ menu_list[0].menu_name;
+    location.href=url;
+    console.log(url);
 }
 
