@@ -102,5 +102,7 @@ body{
 }
 
 @media( max-width : 810px){
-    
+    .menuBanner{
+        left: 300px;
+    }
 }
