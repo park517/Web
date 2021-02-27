@@ -101,7 +101,7 @@ body{
     padding: 30px;
 }
 
-@media( max-width : 810px){
+@media( max-width : 1000px){
     .menuBanner{
         left: 200px;
     }
