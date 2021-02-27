@@ -1,4 +1,4 @@
-
+﻿//테스트
 // table를 id 값으로 불러와준다
 const table = document.getElementById("menuTable");
 
