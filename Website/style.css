@@ -101,9 +101,33 @@ body{
     padding: 30px;
 }
 
-@media( min-width : 768px){
+@media( min-width : 400px){
     .menuBanner{
-        left: 200px;
-        font-size: large;
+        left:100px;
+        font-size: 65px;
+
     }
+        
+    ul li {
+        line-height: 1;
+        border-right: 3px solid #bdb4a3;
+        font-family:  Georgia, 'Times New Roman', Times, serif;
+        font-weight : 800;
+        color:black;
+        list-style-type:none; 
+        float: left;
+        padding: 10px;
+        margin-left: 50px;
+        margin-top: 50px;
+        }
+
+    .main_menu{
+        border-bottom: 3px solid #bdb4a3;
+        font-size: 40px;  
+        color: white;
+        margin-left: 100px; 
+        margin-top: 200px;
+        padding: 20px;
+        width: 200px;
+        }
 }
