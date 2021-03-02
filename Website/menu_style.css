@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0;
     background-color: #1d2123;
@@ -69,7 +71,7 @@ a{
 }
 
 .head{
-    height: 600px;
+    height: 750px;
     background-image: url(img/123.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -156,33 +158,52 @@ input:checked + label {
     padding: 8px 12px;
 }
 
+.menu_img{
+   
+    width: 350px; 
+    height: 300px; 
+    
+}
+
+
 
 p{
     font-size: 30px;
+}
+.navbar_toogleBtn{
+    display: none;
 }
 
 
 @media(min-width: 320px) and (max-width: 480px){
     .navbar{
-        width: 400px;
-        height: 40px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
     .navbar_logo{
         height: 50px;
         width:  50px; 
         padding: 8px 5px;
+        
     }
     .navbar_menu{
-        
-        display:flex;
+        width: 412px;
+        align-content: center;
+        display: none;
+        flex-direction: column;
         list-style: none;
-        padding-left: 0;
+        align-items: flex-start;
+      
     }
 
     .navbar_menu li {
         font-size: 10px;
         padding: 8px 12px;
-        border-bottom: 3px solid white;
+        border-bottom: 1px solid white;
         margin-right: 10px;
     }
 
@@ -201,6 +222,7 @@ p{
 
     .navbar_call li{
         padding: 8px 12px;
+        display: none;
     }
 
     .la{
@@ -261,6 +283,22 @@ p{
     
 }
 
+.navbar_toogleBtn{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar_menu.active{
+    margin: 0;
+    display: flex;
+    margin-left: 10px;
+    padding: 0px;
+    align-items: center;
+}
 
 
 }
