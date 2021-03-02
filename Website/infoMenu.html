@@ -3,7 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu_style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +13,14 @@
     <div class="head">
 
             <nav class="navbar">
-                <div class="navber_logo">
+                <div>
                 <a href="index.html">
-                    <img src="img/output-onlinepngtools.png " style="width: 100px; height: 100px; padding: 8px 12px;" alt="">
+                    <img class = "navbar_logo"src="img/output-onlinepngtools.png "  alt="">
                 </a>
                 </div>
 
                 <ul class="navbar_menu">
-                    <li><a href="">메뉴소개</a></li>
+                    <li><a href="infoMenu.html">메뉴소개</a></li>
                     <li><a href="">매장소개</a></li>
                     <li><a href="">이용후기</a></li>
                     <li><a href="">고객센터</a></li>
@@ -39,15 +39,15 @@
 
     <div class="context">
         <center>
+
             <input id="tab1" type="radio" name="tabs" checked> 
             <label for="tab1">메인메뉴</label>
         
             <input id="tab2" type="radio" name="tabs">
             <label for="tab2">사이드메뉴</label>
 
-            <div class="mainMenu"  id="content1" style="margin-bottom:20px;">
+            <section class="mainMenu"  id="content1" style="margin-bottom:20px;">
                 <div class="mainDiv">
-
                     <div class="mainMenuContext">
 
                         <p>국물닭발</p>
@@ -63,9 +63,8 @@
                     </div>
 
                 </div>
-
+                
                 <div class="mainDiv">
-
                     <div class="mainMenuContext">
 
                         <p>통닭발</p>
@@ -79,21 +78,49 @@
                         <p>파닭똥집튀김</p>
                         <img class ="menu_img" src="img/dt.jpg" >
                     </div>
+                </div>
+            </section>
+        
+
+            <section  class="subMenu" id="content2" style="margin-bottom:20px;">
+                <div class="mainDiv">
+                    <div class="mainMenuContext">
+
+                        <p>직화닭똥집</p>
+                        <img class ="menu_img" src="img/gd.jpg" >
+                    </div>
+                    <div class="mainMenuContext"> 
+                        <p>숙주나물라면</p>
+                        <img  class ="menu_img" src="img/cm.jpg">
+                    </div>
+                    <div class="mainMenuContext">
+                        <p>스팸김치볶음밥</p>
+                        <img  class ="menu_img" src="img/md.png" >
+                    </div>
 
                 </div>
-            </div>
-        
-            <section  class="submenu" id="content2" style="margin-bottom:20px;">
-                서브메뉴
+                
+                <div class="mainDiv">
+                    <div class="mainMenuContext">
+
+                        <p>즉석떡볶이</p>
+                        <img class ="menu_img" src="img/ddok.jpg" >
+                    </div>
+                    <div class="mainMenuContext"> 
+                        <p>치킨봉과 감자튀김</p>
+                        <img class ="menu_img" src="img/dak.jpg" >
+                    </div>
+                    <div class="mainMenuContext">
+                        <p>감자튀김</p>
+                        <img class ="menu_img" src="img/dt.jpg" >
+                    </div>
+                </div>
             </section>
 
         
          </center>
     
-
-
- 
-    </div>
+     </div>
     
     
     

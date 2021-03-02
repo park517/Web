@@ -1,119 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <style>
-        html{
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main_style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
 
-            padding: 0;
-            margin: 0;
-          
-        }
-        .menuBar{
-  
-            width: 1000px ; 
-            margin: 0;
-        }
-        .phoneNumber{
-            color: black;
-            margin: 0;
-            
-        }
-        .header_wrap {
-            position: fixed;
-            min-width: 1500px;
-            width: 100%;
-            background-color: rgb(255, 255, 255);
-            opacity: 0.8;
-            height: 120px;
-            margin: 0;
-            
-        }
-       
-        .phoneNumber {
-            position: absolute;
-            width: 135px;
-            bottom: 10px;
-            right: 40px;
-            margin: 0;
-            
-        }
-        
-
-        ul li {
-
-            text-align: center;
-            line-height: 1;
-            border-right: 3px solid #bdb4a3;
-            font-family:  Georgia, 'Times New Roman', Times, serif;
-            font-weight : 800;
-            color:black;
-            list-style-type:none; 
-            float: left;
-            padding: 20px;
-            margin-left: 110px;
-            margin-top: 50px;
-        }
-        body{
-            position: relative;
-            background-color: rgb(83, 81, 81);
-            margin: 0;
-            padding: 0;
-            
-            
-            
-        }
-      
-
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="overallView" >
-            <div class ="header_wrap">
-                <div class="header" style="width: 150px ; height:180px">
-                    <h1 style="width: 150px; float: left;">
-                        <a href="index.html">
-                            <img src="img/logo.PNG" alt="이미지 자리" style="width: 100px; height:80px ; margin-left: 30px;"  >
-                        </a>
-                    </h1>
-
-                    <ul class="menuBar" >
-
-                        <li><a href="infoMenu.html">메뉴소개</a></li>
-                        <li>매장소개</li>
-                        <li>매장소식</li>
-                        <li>고객센터</li>  
-
-                    </ul>
-
-                    <div class="phoneNumber">
-
-                        <strong>대표 전화</strong>
-                        <p>
-                            010-7736-8592
-                        </p>
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="content">
-        <div class="imgContent">
-            <center>
-            <img src="img/mainimg.PNG" alt="" style="width: 100%;">
-            <img src="img/img3.PNG" alt="" style="width: 100%;">
-            </center>
-        </div>
-
-
-    </div>
+        <div class="slide">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        <div class="head">
     
+                <nav class="navbar">
+                    <div class="navber_logo">
+                    <a href="index.html">
+                        <img src="img/output-onlinepngtools.png " style="width: 100px; height: 100px; padding: 8px 12px;" alt="">
+                    </a>
+                    </div>
+    
+                    <ul class="navbar_menu">
+                        <li><a href="infoMenu.html">메뉴소개</a></li>
+                        <li><a href="">매장소개</a></li>
+                        <li><a href="">이용후기</a></li>
+                        <li><a href="">고객센터</a></li>
+                    </ul>
+                    <ul class="navbar_call">
+                        <p> 대표 전화</p>
+                        <p>010-7736-8592</p>
+                    </ul>
+                </nav>
+            
+    
+        </div> 
+    
+
+        <script src="main.js"></script>
+
 </body>
 </html>

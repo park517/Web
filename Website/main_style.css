@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background-color: #1d2123;
+    color: white;
+    font-family: 'Sunflower', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    margin: 0;
+    width: 100%;
+    position : fixed;
+    height: 100px;
+    top: 0;
+    opacity: 0.8;
+    display: flex;
+    /* 아이템들 수평으로 정렬 */
+    justify-content: space-between; 
+    /* 중간중간 일정한 공간넣기 */
+    align-items:  center;
+    /* 수직적으로 센터에 아이템 배치하기 */
+    background-color: #1d2123;
+    padding: 8px 12px;
+    /* 위아래로 8px 양 옆으로 12px */
+}
+
+.navbar_menu{
+    
+    display:flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+
+    padding: 8px 12px;
+    border-bottom: 3px solid white;
+    margin-right: 50px;
+}
+
+.navbar_menu li:hover{
+    background-color: violet;
+
+}
+
+.navbar_call {
+    margin-right: 20px;
+    list-style: none;
+    color: white;
+}
+
+
+.navbar_call li{
+    padding: 8px 12px;
+}
+
+
+.head{
+    height: 100px;
+}
+
+
+
+ul,li{list-style:none; margin:0;}
+
+.slide{height:700px;overflow:hidden;}
+.slide ul{height:100%;}
+.slide li{height:100%;}
+.slide li:nth-child(1){background-image: url(img/view.jpg); background-repeat: no-repeat; background-size: 100%;}
+.slide li:nth-child(2){background-image: url(img/img3.png); background-repeat: no-repeat; background-size: 100%; }
+.slide li:nth-child(3){background-image: url(img/123.jpg); background-repeat: no-repeat; background-size: 100%;}
+.slide li:nth-child(4){background-image: url(img/td.jpg); background-repeat: no-repeat; background-size: 100%;}
