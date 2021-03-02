@@ -156,10 +156,7 @@ input:checked + label {
     padding: 8px 12px;
 }
 
-.menu_img{
-    width: 350px; 
-    height: 300px;
-}
+
 p{
     font-size: 30px;
 }
@@ -235,7 +232,7 @@ p{
 
 .subMenu{
     border-top: 1px solid white;
-    width: 390;
+    width: 390px;
     height: 1000px;
     /* display: flex; */
     /* flex-direction: column; */
@@ -245,7 +242,25 @@ p{
 
     display: flex;
     flex-direction: column;
-    justify-content : space-evenly;
+    
+
 }
+
+.mainMenuContext{
+    border: 1px solid black;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+ 
+}
+.menu_img{
+    padding: 0px 20px;
+    width: 350px; 
+    height: 300px; 
+    
+}
+
+
 
 }
