@@ -1,135 +1,152 @@
-
-@media( max-width : 2000px){
-    .main_menu{
-        border-bottom: 3px solid #bdb4a3;
-        font-size: 40px;  
-        color: white;
-        margin-left: 320px; 
-        margin-top: 200px;
-        padding: 20px;
-        width: 200px;
-    }
-    header{
-        height: 400px;
-    }
-    .menuBanner{
-         color: white;
-         position:absolute;
-         top: 300px; 
-         left: 800px ;
-         font-size: 50px;
-         border-bottom: 3px solid #bdb4a3;
-         padding: 20px;
-
-    }
-    html{
-    
-            padding: 0;
-            margin: 0;
-    
-            }
-    .menuBar{
-            right: 220px;
-            position: absolute;
-            width: 1000px ; 
-            margin: 0;
-            }
-    .phoneNumber{
-            color: black;
-            margin: 0;
-    
-            }
-    .header_wrap {
-            
-            position: fixed;
-            min-width: 1500px;
-            width: 100%;
-            background-color: blanchedalmond;
-            background-size: 100%;
-            opacity: 0.8;
-            height: 120px;
-        
-            margin: 0;
-    
-            }
-    
-    .phoneNumber {
-            position: absolute;
-            width: 135px;
-            bottom: 10px;
-            right: 40px;
-            margin: 0;
-    
-            }
-    
-    
-    ul li {
-    
-            
-            line-height: 1;
-            border-right: 3px solid #bdb4a3;
-            font-family:  Georgia, 'Times New Roman', Times, serif;
-            font-weight : 800;
-            color:black;
-            list-style-type:none; 
-            float: left;
-            padding: 20px;
-            margin-left: 110px;
-            margin-top: 50px;
-            }
-    body{
-            position: relative;
-            background-color: rgb(0, 0, 0);
-            margin: 0;
-            padding: 0;
-    
-            }
-    
-    .overallView{
-        height: 3000px;
-        
-    }
-    .menu_table{
-        padding: 30px;
-        color:  white;
-        height: 400px;
-    
-    }
-    .menu_table th{
-        padding: 30px;
-    }
-    .menu_table td{
-        padding: 30px;
-    }
+body{
+    margin: 0;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    font-family: 'Sunflower', sans-serif;
 }
 
-@media( max-width : 800px){
-    .menuBanner{
-        left:40px;
-        font-size: 60px;
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    margin: 0;
+    width: 100%;
+    position : fixed;
+    height: 100px;
+    top: 0;
+    opacity: 0.8;
+    display: flex;
+    /* 아이템들 수평으로 정렬 */
+    justify-content: space-between; 
+    /* 중간중간 일정한 공간넣기 */
+    align-items:  center;
+    /* 수직적으로 센터에 아이템 배치하기 */
+    background-color: #7c7f83;
+    padding: 8px 12px;
+    /* 위아래로 8px 양 옆으로 12px */
+}
 
-    }
-        
-    ul li {
-        line-height: 1;
-        border-right: 3px solid #bdb4a3;
-        font-family:  Georgia, 'Times New Roman', Times, serif;
-        font-weight : 800;
-        color:black;
-        list-style-type:none; 
-        float: left;
-        padding: 10px;
-        margin-left: 50px;
-        margin-top: 50px;
-        }
+.navbar_menu{
+    
+    display:flex;
+    list-style: none;
+    padding-left: 0;
+}
 
-    .main_menu{
-        border-bottom: 3px solid #bdb4a3;
-        font-size: 40px;  
-        color: white;
-        margin-left: 40px; 
-        margin-top: 200px;
-        padding: 20px;
-        width: 200px;
-        }
+.navbar_menu li {
+
+    padding: 8px 12px;
+    border-bottom: 3px solid white;
+    margin-right: 50px;
+}
+
+.navbar_menu li:hover{
+    background-color: violet;
+
+}
+
+.navbar_call {
+    margin-right: 20px;
+    list-style: none;
+    color: white;
+}
+
+
+.navbar_call li{
+    padding: 8px 12px;
+}
+
+.la{
+    font-size: 35px;
+    color: white;
+    width: 300px;
+    margin-top: 300px;
+    padding: 20px;
+    border-bottom: 3px solid white;
+    margin-bottom: 150px;
+}
+
+.head{
+    height: 500px;
+    background-image: url(img/view.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 200px;
+}
+
+.context {
+    
+    
+    padding: 10px;    
+    border-radius: 7px;      
+  }
+
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;}
+
+input {
+      display: none;}
+
+label {
+    display: inline-block;
+    padding: 15px 25px;
+    font-weight: 600;
+    color: #bbb;
+    border: 1px solid transparent;}
+
+label:hover {
+    color: #2e9cdf;
+    cursor: pointer;}
+
+/*input 클릭시, label 스타일*/
+input:checked + label {
+      color: #2e9cdf;
+      border: 1px solid #ddd;
+      border-top: 2px solid #2e9cdf;
+      border-bottom: 1px solid #ffffff;}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+    display: block;}
+
+.menu{
+    height: 500px;
+    width: 1500px;
+    background: #888080;
+
+}
+
+.mainMenu{
+    border: 1px solid black;
+    width: 1300px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.mainDiv{
+
+    display: flex;
+    justify-content : space-evenly;
+}
+
+.mainMenuContext{
+    border: 1px solid black;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    
+ 
+}
+
+.menu_img{
+    width: 350px; 
+    height: 300px;
+}
+p{
+    font-size: 30px;
 }

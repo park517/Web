@@ -1,100 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 "  > 
-    <link rel="stylesheet" href="style.css">
-
-
-    <title>웹사이트 만들어보기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
-
 <body>
-    <div class="overallView" >
-        <header>
-            <div class ="header_wrap">
-                <div class="header" style="width: 150px ; height:180px">
-                    <h1 style="width: 150px; float: left;">
-                        <a href="index.html">
-                            <img src="img/output-onlinepngtools.png" alt="이미지 자리" style="width: 120px; height:80px ; margin-left: 30px;"  >
-                        </a>
-                    </h1>
-                    <ul class="menuBar" >
-                        <li><a href="infoMenu.html">메뉴소개</a></li>
-                        <li>매장소개</li>
-                        <li>매장소식</li>
-                        <li>고객센터</li>  
-                    </ul>
-                    <div class="phoneNumber">
-                        <strong>대표 전화</strong>
-                        <p>
-                            010-7736-8592
-                        </p>
+    <div class="head">
+
+            <nav class="navbar">
+                <div class="navber_logo">
+                <a href="index.html">
+                    <img src="img/output-onlinepngtools.png " style="width: 100px; height: 100px; padding: 8px 12px;" alt="">
+                </a>
+                </div>
+
+                <ul class="navbar_menu">
+                    <li><a href="">메뉴소개</a></li>
+                    <li><a href="">매장소개</a></li>
+                    <li><a href="">이용후기</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+                <ul class="navbar_call">
+                    <p> 대표 전화</p>
+                    <p>010-7736-8592</p>
+                </ul>
+            </nav>
+        
+        <center>
+        <label class ="la"> 공덕 닭발왕 메뉴</label>
+       </center>
+    </div> 
+
+
+    <div class="context">
+        <center>
+            <input id="tab1" type="radio" name="tabs" checked> 
+            <label for="tab1">메인메뉴</label>
+        
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">사이드메뉴</label>
+
+            <div class="mainMenu"  id="content1" style="margin-bottom:20px;">
+                <div class="mainDiv">
+
+                    <div class="mainMenuContext">
+
+                        <p>국물닭발</p>
+                        <img class ="menu_img" src="img/gd.jpg" >
                     </div>
-                    
+                    <div class="mainMenuContext"> 
+                        <p>치즈무뼈닭발</p>
+                        <img  class ="menu_img" src="img/cm.jpg">
+                    </div>
+                    <div class="mainMenuContext">
+                        <p>무뼈닭발</p>
+                        <img  class ="menu_img" src="img/md.png" >
+                    </div>
+
+                </div>
+
+                <div class="mainDiv">
+
+                    <div class="mainMenuContext">
+
+                        <p>통닭발</p>
+                        <img class ="menu_img" src="img/td.jpg" >
+                    </div>
+                    <div class="mainMenuContext"> 
+                        <p>오돌뼈</p>
+                        <img class ="menu_img" src="img/dak.jpg" >
+                    </div>
+                    <div class="mainMenuContext">
+                        <p>파닭똥집튀김</p>
+                        <img class ="menu_img" src="img/dt.jpg" >
+                    </div>
+
                 </div>
             </div>
-
-            <div  class = "menuBanner"> 
-                메뉴소개
-
-            </div>
-        </header>
-
-        <div class=" menu_context">
-
-            <h2 class ="main_menu" > 메인 메뉴</h2>
-
-            <center>
-
-            
-
-            <table class = "menu_table" >
-                    <th> 치즈 무뼈 닭발</th>
-                    <th> 국물 닭발</th>    
-                    <th> 무뼈 닭발</th>
-                    <tr>
-                        <td><img src="img/cm.jpg" style="width: 300px; height: 300px;"></td>
-                        <td><img src="img/gd.jpg" style="width: 300px; height: 300px;"></td>
-                        <td><img src="img/md.jpg" style="width: 300px; height: 300px;"></td>
-                    </tr>
-            </table>
-
-            <table class = "menu_table" >
-                    <th> 통 닭발</th>
-                    <th> 오돌뼈</th>    
-                    <th> 파 똥집 튀김</th>
-                    <tr>
-                        <td><img src="img/td.jpg" style="width: 300px; height: 300px;"></td>
-                        <td><img src="img/gd.jpg" style="width: 300px; height: 300px;"></td>
-                        <td><img src="img/dt.jpg" style="width: 300px; height: 300px;"></td>
-                    </tr>
-           </table>
-
-           <table class = "menu_table" >
-                <th> 치즈 무뼈 닭발</th>
-                <th> 국물 닭발</th>    
-                <th> 무뼈 닭발</th>
-                <tr>
-                    <td><img src="img/cm.jpg" style="width: 300px; height: 300px;"></td>
-                    <td><img src="img/gd.jpg" style="width: 300px; height: 300px;"></td>
-                    <td><img src="img/md.jpg" style="width: 300px; height: 300px;"></td>
-                </tr>
-            </table>
-            </center>
-
-
-        </div>
-
-
-      
-    </div>
-
+        
+            <section  class="submenu" id="content2" style="margin-bottom:20px;">
+                서브메뉴
+            </section>
 
         
+         </center>
+    
 
+
+ 
+    </div>
+    
+    
+    
 </body>
 </html>
