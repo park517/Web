@@ -165,7 +165,7 @@ p{
 }
 
 
-@media(max-width : 412px){
+@media(max-width : 600px){
     .navbar{
         width: 400px;
         height: 40px;
@@ -173,7 +173,7 @@ p{
     .navbar_logo{
         height: 50px;
         width:  50px; 
-        padding: 8px 12px;
+        padding: 8px 5px;
     }
     .navbar_menu{
         
