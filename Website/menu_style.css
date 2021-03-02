@@ -165,7 +165,7 @@ p{
 }
 
 
-@media(max-width : 600px){
+@media all and (max-width : 1440px){
     .navbar{
         width: 400px;
         height: 40px;
