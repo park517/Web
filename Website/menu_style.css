@@ -167,9 +167,6 @@ input:checked + label {
     
 }
 
-.mainMenuContext :hover{
-    background-color: violet;
-}
 
 .menu_img{
    
@@ -228,9 +225,9 @@ p{
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 20px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     margin: 20px 0 0 0;
  }
  .hover_effect_box .caption_desc {
@@ -374,26 +371,6 @@ p{
 @media(min-width: 320px) and (max-width: 480px){
 
     
-    .hover_effect_box {
-        margin-left: 20px;
-        width: 352px;
-        height: 400px;
-        margin-bottom: 50px;
-        border: 1px solid black;
-        margin-top: 70px;
-        display: flex;
-        /* flex-direction: column; */
-        border: 1px solid black;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        /* -webkit-box-shadow: 1px 1px 2px #e6e6e6;
-        -moz-box-shadow: 1px 1px 2px #e6e6e6;
-        box-shadow: 1px 1px 2px #e6e6e6; */
-        /* cursor: default; */
-        background-color: #1d2123;
-        /* box-sizing: initial; */
-    }
     
     .navbar{
         width: 100%;
