@@ -166,15 +166,11 @@ input:checked + label {
     flex-direction: column;
     
 }
-
-
 .menu_img{
-   
     width: 350px; 
     height: 300px; 
     
 }
-
 p{
     font-size: 30px;
 }
