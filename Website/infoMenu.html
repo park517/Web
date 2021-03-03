@@ -11,93 +11,191 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- 헤더부분 -->
     <div class="head">
 
+            <!-- 상단바 부분 -->
             <nav class="navbar">
+
+                <!-- 로고 -->
                 <div>
                 <a href="index.html">
                     <img class = "navbar_logo"src="img/output-onlinepngtools.png "  alt="">
                 </a>
                 </div>
 
+                <!-- 각 메뉴바 부분 -->
                 <ul class="navbar_menu">
                     <li><a href="infoMenu.html">메뉴소개</a></li>
                     <li><a href="">매장소개</a></li>
                     <li><a href="">이용후기</a></li>
                     <li><a href="">고객센터</a></li>
                 </ul>
+
                 <ul class="navbar_call">
                     <p> 대표 전화</p>
                     <p>010-7736-8592</p>
                 </ul>
 
+                <!-- 스마트폰 화면 상에서 보일 메뉴바 -->
                 <a href="#" class ="navbar_toogleBtn">
                     <i class="fas fa-bars"></i>
                 </a>
+
             </nav>
+        
         
         <center>
         <label class ="la"> 공덕 닭발왕 메뉴</label>
        </center>
     </div> 
 
-
+    <!-- 본 컨텐츠 부분 -->
     <div class="context">
         <center>
-
+            <!-- 메뉴 탭뷰 구현 -->
             <input id="tab1" type="radio" name="tabs" checked> 
             <label for="tab1">메인메뉴</label>
         
             <input id="tab2" type="radio" name="tabs">
             <label for="tab2">사이드메뉴</label>
 
+            <!-- 메인 메뉴 탭 내용 -->
             <section class="mainMenu"  id="content1" style="margin-bottom:20px;">
                 <div class="mainDiv">
-                    <div class="mainMenuContext">
 
-                        <p>국물닭발</p>
-                        <img class ="menu_img" src="img/gd.jpg" >
+                   
+                    <div class="hover_effect_box hover_effect_6">
+                        <div class="mainMenuContext">
+                            <p>국물닭발</p>
+                            <img class ="menu_img" id="gd_click" src="img/gd.jpg" >
+                        </div>
+                        <div class="caption">
+                            <div class="caption_title">국물닭발</div>
+                  
+                            <div class="caption_desc">
+                              상세 내용은 여기에...<br>
+                              상세 내용은 여기에...<br>
+                              상세 내용은 여기에...
+                            </div>
+                      
+                          </div>
                     </div>
-                    <div class="mainMenuContext"> 
-                        <p>치즈무뼈닭발</p>
-                        <img  class ="menu_img" src="img/cm.jpg">
+                
+               
+                    <div class="hover_effect_box hover_effect_6">    
+
+                        <div class="mainMenuContext"> 
+                            <p>치즈무뼈닭발</p>
+                            <img  class ="menu_img" src="img/cm.jpg">
+                        </div>
+
+                        <div class="caption">
+                            <div class="caption_title">치즈무뼈닭발</div>
+                            <div class="caption_desc">
+                              상세 내용은 여기에...<br>
+                              상세 내용은 여기에...<br>
+                              상세 내용은 여기에...
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="mainMenuContext">
-                        <p>무뼈닭발</p>
-                        <img  class ="menu_img" src="img/md.png" >
+
+                    <div class="hover_effect_box hover_effect_6">    
+
+                        <div class="mainMenuContext">
+                            <p>무뼈닭발</p>
+                            <img  class ="menu_img" src="img/md.png" >
+                        </div>
+
+                        <div class="caption">
+                            <div class="caption_title">무뼈닭발</div>
+                            <div class="caption_desc">
+                              상세 내용은 여기에...<br>
+                              상세 내용은 여기에...<br>
+                              상세 내용은 여기에...
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
                 
                 <div class="mainDiv">
-                    <div class="mainMenuContext">
 
-                        <p>통닭발</p>
-                        <img class ="menu_img" src="img/td.jpg" >
+                    <div class="hover_effect_box hover_effect_6">    
+
+                        <div class="mainMenuContext">
+                            <p>통닭발</p>
+                            <img class ="menu_img" src="img/td.jpg" >
+                        </div>
+
+                        <div class="caption">
+                            <div class="caption_title">통닭발</div>
+                            <div class="caption_desc">
+                            상세 내용은 여기에...<br>
+                            상세 내용은 여기에...<br>
+                            상세 내용은 여기에...
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="mainMenuContext"> 
-                        <p>오돌뼈</p>
-                        <img class ="menu_img" src="img/dak.jpg" >
+
+                    <div class="hover_effect_box hover_effect_6">    
+
+                        <div class="mainMenuContext"> 
+                            <p>오돌뼈</p>
+                            <img class ="menu_img" src="img/dak.jpg" >
+                        </div>
+
+                        <div class="caption">
+                            <div class="caption_title">오돌뼈</div>
+                            <div class="caption_desc">
+                            상세 내용은 여기에...<br>
+                            상세 내용은 여기에...<br>
+                            상세 내용은 여기에...
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="mainMenuContext">
-                        <p>파닭똥집튀김</p>
-                        <img class ="menu_img" src="img/dt.jpg" >
-                    </div>
+
+                    <div class="hover_effect_box hover_effect_6">    
+
+                        <div class="mainMenuContext">
+                            <p>파닭똥집튀김</p>
+                            <img class ="menu_img" src="img/dt.jpg" >
+                        </div>
+
+                        <div class="caption">
+                            <div class="caption_title">파닭똥집튀김</div>
+                            <div class="caption_desc">
+                            상세 내용은 여기에...<br>
+                            상세 내용은 여기에...<br>
+                            상세 내용은 여기에...
+                            </div>
+                        </div>
+
+                     </div>
+
                 </div>
             </section>
         
+            <!-- 사이드 메뉴 탭 내용 -->
 
             <section  class="subMenu" id="content2" style="margin-bottom:20px;">
                 <div class="mainDiv">
-                    <div class="mainMenuContext">
 
+                    <div class="mainMenuContext">
                         <p>직화닭똥집</p>
                         <img class ="menu_img" src="img/gd.jpg" >
                     </div>
+
                     <div class="mainMenuContext"> 
                         <p>숙주나물라면</p>
                         <img  class ="menu_img" src="img/cm.jpg">
                     </div>
+
                     <div class="mainMenuContext">
                         <p>스팸김치볶음밥</p>
                         <img  class ="menu_img" src="img/md.png" >
@@ -107,18 +205,20 @@
                 
                 <div class="mainDiv">
                     <div class="mainMenuContext">
-
                         <p>즉석떡볶이</p>
                         <img class ="menu_img" src="img/ddok.jpg" >
                     </div>
+
                     <div class="mainMenuContext"> 
                         <p>치킨봉과 감자튀김</p>
                         <img class ="menu_img" src="img/dak.jpg" >
                     </div>
+
                     <div class="mainMenuContext">
                         <p>감자튀김</p>
                         <img class ="menu_img" src="img/dt.jpg" >
                     </div>
+
                 </div>
             </section>
 
@@ -126,6 +226,8 @@
          </center>
     
      </div>
+
+ 
     
     <script src="menu.js"></script>
     
