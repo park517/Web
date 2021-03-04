@@ -371,6 +371,11 @@ input:checked + label {
 
 @media(min-width: 320px) and (max-width: 480px){
 
+
+   .hover_effect_box ,.hover_effect_6{
+        margin-left: 18px;
+   }
+    
     
     
     .navbar{
@@ -442,6 +447,7 @@ input:checked + label {
     }
 
     .mainMenu{
+        
         border-top: 1px solid white;
         width: 390px;
         height: 1000px;
@@ -467,10 +473,10 @@ input:checked + label {
 
     .mainMenuContext{
         border: 1px solid black;
-    
+     
         display: flex;
         flex-direction: column;
-        align-content: center;
+      
     
     }
     .menu_img{
