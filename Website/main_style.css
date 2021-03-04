@@ -11,8 +11,8 @@ body{
 }
 
 .head{
-    height: 750px;
-    background-image: url(img/123.jpg);
+    height: 100px;
+
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: 200px;

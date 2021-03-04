@@ -247,7 +247,7 @@ strong {
 
 
     .context {
-    
+        
         margin-top: 100px;
         width: 412px;
         display: flex;
@@ -272,6 +272,8 @@ strong {
 
 
     .comment {
+        width: 100%;
+        background-color: black;
         text-align: center;
         margin-bottom: 80px;
         
@@ -290,14 +292,15 @@ strong {
         padding: 0px;
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 0px;
+        margin-bottom: 50px;
     }
       
     .caption_text1{
+        
         text-align: center;
-        width: 412px;
-        margin: 0px;
-        padding: 0px;
+        width: 350px;
+        margin: auto;
 
     }
    
@@ -307,14 +310,14 @@ strong {
         justify-content: space-between;
         display: flex;
         flex-direction:column-reverse;
-        margin: 0;
+        margin: 0px;
+        margin-bottom: 50px;
     }
   
     .caption_text2{
         text-align: center;
-        width: 412px;
-        margin: 0px;
-        padding: 0px;
+        width: 350px;
+        margin: auto;
        
         
     }
@@ -326,11 +329,11 @@ strong {
         background-color: palevioletred;
     }
     .caption_text1 p,.caption_text2 p{
-        font-size: 20px;
+        font-size: 15px;
     }
     .caption_text1 h2,.caption_text2 h2{
         
-        font-size: 30px;
+        font-size: 25px;
     }
     strong {
         color :violet
