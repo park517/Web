@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
 body{
     margin: 0;
     background-color: #1d2123;
@@ -5,12 +10,18 @@ body{
     font-family: 'Sunflower', sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+.head{
+    height: 750px;
+    background-image: url(img/123.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 200px;
 }
 
+
+ /* 상단부 부분 */
 .navbar {
+    z-index: 1;
     margin: 0;
     width: 100%;
     position : fixed;
@@ -23,9 +34,22 @@ a{
     /* 중간중간 일정한 공간넣기 */
     align-items:  center;
     /* 수직적으로 센터에 아이템 배치하기 */
-    background-color: lightgray;
+    background-color: #b6b6b6;
     padding: 8px 12px;
+    border-bottom: 1px solid gray;
     /* 위아래로 8px 양 옆으로 12px */
+}
+
+.navbar_toogleBtn{
+    display: none;
+}
+
+
+.navbar_logo{
+    width: 100px; 
+    height: 100px; 
+    padding: 8px 12px;
+    
 }
 
 .navbar_menu{
@@ -56,18 +80,6 @@ a{
 
 .navbar_call li{
     padding: 8px 12px;
-}
-
-
-.head{
-    height: 100px;
-}
-
-.navbar_logo{
-    width: 100px; 
-    height: 100px; 
-    padding: 8px 12px;
-    
 }
 
 .context{

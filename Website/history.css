@@ -1,0 +1,341 @@
+
+a{
+    text-decoration: none;
+    color: white;
+}
+ 
+.head{
+    height: 134px;
+}
+body{
+    display: flex;
+    margin: 0;
+    background-color: #1d2123;
+    color: white;
+    flex-direction: column;
+    
+}
+
+
+ /* 상단부 부분 */
+.navbar {
+    font-family: 'Sunflower', sans-serif;
+    margin: 0;
+    width: 100%;
+    position : fixed;
+    height: 117px;
+    top: 0;
+    opacity: 0.8;
+    display: flex;
+    /* 아이템들 수평으로 정렬 */
+    justify-content: space-between; 
+    /* 중간중간 일정한 공간넣기 */
+    align-items:  center;
+    /* 수직적으로 센터에 아이템 배치하기 */
+    background-color: #b6b6b6;
+    padding: 8px 12px;
+    border-bottom: 1px solid gray;
+    /* 위아래로 8px 양 옆으로 12px */
+}
+
+.navbar_toogleBtn{
+    display: none;
+}
+
+
+.navbar_logo{
+    width: 124px; 
+    height: 116px; 
+    padding: 8px 12px;
+    
+}
+
+.navbar_menu{
+    
+    display:flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+
+    padding: 8px 12px;
+    border-bottom: 3px solid white;
+    margin-right: 50px;
+}
+
+.navbar_menu li:hover{
+    background-color: violet;
+
+}
+
+.navbar_call {
+    margin-right: 20px;
+    list-style: none;
+    color: white;
+}
+
+
+.navbar_call li{
+    padding: 8px 12px;
+}
+.context {
+    
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /*수평 정렬*/ 
+
+}
+
+.context img{
+    height: 400px;
+    width: 450px;
+    border : 3px solid white;
+    border-radius: 10px;
+}
+.caption1{
+
+    justify-content: space-between;
+    padding: 30px 30px;
+    margin-left: 80px;
+    display: flex;
+    margin-right: auto;
+}
+.comment {
+    text-align: center;
+    margin-bottom: 80px;
+    
+}
+.comment h1{
+    font-size: 50px;
+}
+.comment p{
+    font-size: 30px;
+}
+
+
+.caption2{
+    
+    justify-content: space-between;
+    padding: 30px 30px;
+    margin-right: 80px;
+    display: flex;
+    margin-left: auto;
+}
+
+.caption_text1{
+    text-align: center;
+    width: 500px;
+    margin-left: 150px;
+}
+.caption_text2{
+    text-align: center;
+    width: 500px;
+    margin-right: 150px;
+}
+
+.caption_text2 a{
+    margin-top: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: palevioletred;
+}
+.caption_text1 p,.caption_text2 p{
+    font-size: 20px;
+}
+.caption_text1 h2,.caption_text2 h2{
+    
+    font-size: 40px;
+}
+strong {
+    color :violet
+}
+
+
+
+
+
+
+
+@media(min-width: 320px) and (max-width: 480px){
+
+    .context  img{
+        width: 412px;
+        height: 300px;
+    }
+    .navbar{
+        width: 412px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar_logo{
+        height: 50px;
+        width:  50px; 
+        padding: 8px 5px;
+        
+    }
+    .navbar_menu{
+        width: 412px;
+        align-content: center;
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        align-items: flex-start;
+      
+    }
+
+    .navbar_menu li {
+        font-size: 10px;
+        padding: 8px 12px;
+        border-bottom: 1px solid white;
+        margin-right: 10px;
+    }
+
+    .navbar_menu li:hover{
+        background-color: violet;
+
+    }
+
+    .navbar_call {
+        margin-right: 20px;
+        list-style: none;
+        color: white;
+        display: none;
+    }
+
+
+    .navbar_call li{
+        padding: 8px 12px;
+        display: none;
+    }
+
+
+    .head{
+        height: 100px;
+       
+        background-repeat: no-repeat;
+        background-size: 100%;
+    
+    }
+
+
+    .navbar_toogleBtn{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 15px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .navbar_menu.active{
+
+        margin: 0;
+        display: flex;
+
+        padding: 0px;
+        align-items: center;
+        background-color: #b6b6b6;
+    }
+
+
+
+    .context {
+    
+        margin-top: 100px;
+        width: 412px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /*수평 정렬*/ 
+    
+    }
+    
+    .context img{
+        
+        margin: auto;
+        height: 350px;
+        width: 350px;
+        border : 3px solid white;
+        border-radius: 10px;
+    }
+
+    .main_context{
+        width: 412px;
+    }
+
+
+    .comment {
+        text-align: center;
+        margin-bottom: 80px;
+        
+    }
+    .comment h1{
+        font-size: 40px;
+    }
+    .comment p{
+        font-size: 20px;
+    }
+    
+
+    .caption1{
+        width: 412px;
+        justify-content: space-between;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+      
+    .caption_text1{
+        text-align: center;
+        width: 412px;
+        margin: 0px;
+        padding: 0px;
+
+    }
+   
+    .caption2{
+        padding: 0px;
+        width: 412px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 0;
+    }
+  
+    .caption_text2{
+        text-align: center;
+        width: 412px;
+        margin: 0px;
+        padding: 0px;
+       
+        
+    }
+    
+    .caption_text2 a{
+        
+        border-radius: 4px;
+        padding: 10px;
+        background-color: palevioletred;
+    }
+    .caption_text1 p,.caption_text2 p{
+        font-size: 20px;
+    }
+    .caption_text1 h2,.caption_text2 h2{
+        
+        font-size: 30px;
+    }
+    strong {
+        color :violet
+    }
+        
+
+
+}

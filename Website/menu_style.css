@@ -50,6 +50,7 @@ body{
     width: 100px; 
     height: 100px; 
     padding: 8px 12px;
+    
 }
 
 .navbar_menu{
@@ -171,7 +172,7 @@ input:checked + label {
     height: 300px; 
     
 }
-p{
+.mainMenuContext p{
     font-size: 30px;
 }
 
@@ -179,6 +180,10 @@ p{
 
 
 /* 모달창 */
+.caption_desc p{
+    font-size: 30px;
+    
+}
 
 .hover_effect_box {
     width: 352px;
