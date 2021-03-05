@@ -29,14 +29,15 @@
         div.menu_list {
             position: relative;
             height: 50px;
-            width: 30%;
+            width: 35%;
             float: left;
             box-sizing: border-box;
             background: #8977ad;
         }
         div.right {
-            height: 500px;
-            width: 70%;
+            position: relative;
+            height: 700px;
+            width: 65%;
             float: right;
             box-sizing: border-box;
             background: #ece6cc;
@@ -49,13 +50,22 @@
             position :absolute;
             bottom:0;
             padding: 10px;
-            width:95%;
+            width:470px;
             border: 2px solid #000000;
             height: 50px;
 
-           
+        }
+        div.payDiv {
+            position :absolute;
+            bottom:0px;
+            padding: 20px;
+            left: 0px;
+            width:200px;
             
-
+            height: 50px;
+        }
+        div.menuBtn {
+        
         }
     
 
@@ -68,42 +78,51 @@
 <body>
     <h1 name="tableName" id="tableName" cols="10" rows="10"> 테이블 이름 </h1>
     <div class = "view">
-    <div class="menu_list"  style=" height :100%"> 
-        <div class="menuTable"  style="overflow:scroll; max-height : 625px;   border: 2px solid #000000 ">
-            <table border="1" width =100% >
-                <!-- 테이블의 헤더 즉 열의 제목 -->
-                
-                    <th>순번</th>  
-                    <th>메뉴</th>
-                    <th>수량</th>
-                    <th>가격</th>
-                <tbody id="menuTable" >             
-                </tbody>
-            </table>
+        <div class="menu_list"  style=" height :100%"> 
+            <div class="menuTable"  style="overflow:scroll; max-height : 625px;   border: 2px solid #000000 ">
+                <table border="1" width =100% >
+                    <!-- 테이블의 헤더 즉 열의 제목 -->
+                    
+                        <th>순번</th>  
+                        <th>메뉴</th>
+                        <th>수량</th>
+                        <th>가격</th>
+                    <tbody id="menuTable" >             
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <input type="text" id="sum"> 총 가격</input>
+                <button id="btn_com" style="width: 100px;" onclick="complete()">주문 완료</button>
+                <button id="btn_reset" style="width: 100px;" onclick="reset()">주문 초기화</button>
+            </div>
         </div>
-        <div class="footer">
-            <input type="text" id="sum"> 총 가격</input>
-            <button id="btn_com" style="width: 100px;" onclick="complete()">주문 완료</button>
-            <button id="btn_reset" style="width: 100px;" onclick="reset()">주문 초기화</button>
-        </div>
-    </div>
     
   
 
 
-    <div class="Right" >
+        <div class="right" >
 
-        <button id="cms"  onclick="menu_click(this.id)"> 치즈 무뼈 닭발 셋트,25000</button>
-        <button id="gms" onclick="menu_click(this.id)"> 직화 무뼈 닭발 셋트,23000</button>
-        <button id="kds" onclick="menu_click(this.id)"> 국물 닭발 셋트,24000</button>
-        <button id="gts" onclick="menu_click(this.id)"> 직화 통닭발 셋트,21000</button>
-        <button id="gos" onclick="menu_click(this.id)"> 직화 오돌뼈 셋트,16000</button>
-        <button id="cm" onclick="menu_click(this.id)"> 치즈 무뼈 닭발,19000</button>
-        <button id="gm" onclick="menu_click(this.id)"> 직화 무뼈 닭발,16000</button>
-        <button id="kd" onclick="menu_click(this.id)"> 국물 닭발,18000</button>
-        <button id="gt" onclick="menu_click(this.id)"> 직화 통닭발,14000</button>
-        <button id ="go" onclick="menu_click(this.id)"> 직화 오돌뼈,14000</button>
-    </div>
+            <div class="menuBtn">
+                <button id="cms"  onclick="menu_click(this.id)"> 치즈 무뼈 닭발 셋트,25000</button>
+                <button id="gms" onclick="menu_click(this.id)"> 직화 무뼈 닭발 셋트,23000</button>
+                <button id="kds" onclick="menu_click(this.id)"> 국물 닭발 셋트,24000</button>
+                <button id="gts" onclick="menu_click(this.id)"> 직화 통닭발 셋트,21000</button>
+                <button id="gos" onclick="menu_click(this.id)"> 직화 오돌뼈 셋트,16000</button>
+                <button id="cm" onclick="menu_click(this.id)"> 치즈 무뼈 닭발,19000</button>
+                <button id="gm" onclick="menu_click(this.id)"> 직화 무뼈 닭발,16000</button>
+                <button id="kd" onclick="menu_click(this.id)"> 국물 닭발,18000</button>
+                <button id="gt" onclick="menu_click(this.id)"> 직화 통닭발,14000</button>
+                <button id ="go" onclick="menu_click(this.id)"> 직화 오돌뼈,14000</button>
+            </div>
+
+            <div class="payDiv">
+
+                <button id="payBtn" style="width: 200px;" onclick="pay()"> 결제 하기 </button>
+
+            </div>
+
+        </div>
 
 
     </div>

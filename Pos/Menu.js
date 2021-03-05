@@ -1,4 +1,4 @@
-﻿//테스트
+
 // table를 id 값으로 불러와준다
 const table = document.getElementById("menuTable");
 
@@ -41,7 +41,7 @@ function menu_click(menuName){
     table.innerHTML += row;
 
     //menu_list에 값 저장
-    menuList.push({'order' : order , 'menuName' : menu[0], 'count' : '1', 'price' : menu[1]})
+    menuList.push({'order' : order , 'menuName' : menu[0], 'count' : '1', 'price' : menu[1],'totalPrice' : sum});
 
     //menu_list 값을 localStorage에 저장
     order ++;
@@ -88,8 +88,25 @@ function write(){
                 <td>${outPutList[i].price}원</td> 
                 </tr>`       
         table.innerHTML += row;
+       
 
     }
+    totalPriceview.value = outPutList[outPutList.length-1].totalPrice;
+}
 
+function pay(){
+    
+    let isPay = confirm("결제 하시겠습니까?",'');
+
+    if(isPay){
+        alert("총 "+totalPriceview.value+" 원이 결제 되었습니다.");
+        let table = document.getElementById("menuTable");
+        table.innerHTML ="";
+        totalPriceview.value =0;
+        sum =0;
+        localStorage.removeItem(tableName);
+    }
+    
+    
 }
 
