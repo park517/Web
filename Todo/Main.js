@@ -1,4 +1,3 @@
-const memo_context = document.getElementById('memo_input');
 const btn_input = document.getElementById('.btn_input');
 const do_list = document.getElementById('do_list');
 
@@ -11,20 +10,20 @@ window.addEventListener("keydown",(e)=>{
 let i =0;
 
 function input(){
+    let text = prompt("할 일을 입력해주세요!");
     
-    let text =memo_context.value;
+ 
     console.log(text);
    
     let row = 
     `<div class="memo">
     <input type="checkbox" name="checkbox" id="checkbox">
-    <textarea name=""  cols="25" rows="1">${text}</textarea>
+    <div >${text}</div>
     </div>
     `;
     i++;
-    memo_context.value ="";
     do_list.innerHTML +=row;
-    memo_context.focus();
+ 
 
     
 
@@ -32,10 +31,16 @@ function input(){
 function remove_lastItem(){
 
     
-    var list = document.querySelectorAll('.do_list > div');
-    var liLen = list.length-1;
-    console.log(liLen);
-    do_list.removeChild(list[liLen]);    
+    let list = document.querySelectorAll('.do_list > div');
+    let liLen = list.length-1;
+    let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
+    if(remove_confirm) {
+
+        do_list.removeChild(list[liLen]);    
+    }
+
+
+
 }
 
 
@@ -43,18 +48,25 @@ function remove_select(){
     let memo_list =document.querySelectorAll('.do_list>div');
     let checkbox_list = document.querySelectorAll('.do_list > div >#checkbox');
     var liLen = checkbox_list.length-1;
-    for(let i in checkbox_list){
-        if(checkbox_list[i].checked==true)
-        do_list.removeChild(memo_list[i]);
+    let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
+    if(remove_confirm) {
+   
+        for(let i in checkbox_list){
+            if(checkbox_list[i].checked==true)
+            do_list.removeChild(memo_list[i]);
+        }
     }
+   
+    
+
 }
 
 function remove_all(){
+    let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
+    if(remove_confirm) {
+         do_list.innerHTML ="";
+    }
+    
 
-   do_list.innerHTML ="";
 }
-
-// function remove(){
-//     do_list.removeChild(do_list.childNodes[] ); 
-// }
 

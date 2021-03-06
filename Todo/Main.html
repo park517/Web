@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/012d5a0fd2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +18,7 @@
             <h1>TodoList!</h1>
             
             <div class="insert">
-                <input id = "memo_input" type="text">
-                <button id = "btn_insert"  onclick="input(this.index)">추가하기!</button>
+                <i id =" btn_insert" class="fas fa-plus-circle" onclick="input()"></i>
             </div>
 
         </div>
@@ -25,14 +27,13 @@
 
             <div class="memo">
                 <input type="checkbox" name="checkbox" id="checkbox">
-                <textarea name="" id="memo_context" cols="25" rows="1"></textarea>
+                <div name="" readonly id="memo_context" cols="25" rows="1">헤헿</div>
+                <!-- <textarea name="" readonly id="memo_context" cols="25" rows="1">헤헿</textarea> -->
                
             
             </div>
     
             
-
-
 
         </div>
         <div class="remove">
