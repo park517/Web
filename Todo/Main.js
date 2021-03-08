@@ -2,7 +2,6 @@
 const btn_input = document.getElementById('.btn_input');
 const do_list = document.getElementById('do_list');
 let text_list =[];
-const i =0;
 
 window.addEventListener("keydown",(e)=>{
     if(e.keyCode==13) input();
@@ -43,7 +42,6 @@ function remove_lastItem(){
         text_list.splice(liLen,1);
         replace();
     }
-
 
 
 }
