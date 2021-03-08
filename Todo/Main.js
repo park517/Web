@@ -1,18 +1,20 @@
+
 const btn_input = document.getElementById('.btn_input');
 const do_list = document.getElementById('do_list');
-
-
+let text_list =[];
 window.addEventListener("keydown",(e)=>{
   if(e.keyCode==13) input();
 });
 
+if(localStorage.getItem('memo')!=null){
+    print();
+}
 
 let i =0;
 
 function input(){
     let text = prompt("할 일을 입력해주세요!");
     
- 
     console.log(text);
    
     let row = 
@@ -21,10 +23,11 @@ function input(){
     <div >${text}</div>
     </div>
     `;
-    i++;
+    // i++;
     do_list.innerHTML +=row;
- 
-
+    text_list.push({'memo' : text});
+    localStorage.setItem('memo',JSON.stringify(text_list));
+    console.log(JSON.parse(localStorage.getItem('memo')))
     
 
 } 
@@ -36,7 +39,9 @@ function remove_lastItem(){
     let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
     if(remove_confirm) {
 
-        do_list.removeChild(list[liLen]);    
+        do_list.removeChild(list[liLen]);
+        text_list.splice(liLen,1);
+        replace();
     }
 
 
@@ -47,14 +52,23 @@ function remove_lastItem(){
 function remove_select(){
     let memo_list =document.querySelectorAll('.do_list>div');
     let checkbox_list = document.querySelectorAll('.do_list > div >#checkbox');
+    console.log("첵박 리스트 길이  : "+checkbox_list.length);
     var liLen = checkbox_list.length-1;
     let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
     if(remove_confirm) {
    
-        for(let i in checkbox_list){
-            if(checkbox_list[i].checked==true)
-            do_list.removeChild(memo_list[i]);
+        for(let i =liLen ; i>=0;i--){
+            if(checkbox_list[i].checked==true) {
+                text_list.splice(i,1);
+                console.log("i : "+i);
+                do_list.removeChild(memo_list[i]);
+                console.log(i+"번째 내용 삭제");
+                
+                console.log(text_list);
+            }
         }
+        replace();
+      
     }
    
     
@@ -65,8 +79,32 @@ function remove_all(){
     let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
     if(remove_confirm) {
          do_list.innerHTML ="";
+         localStorage.removeItem('memo');
     }
     
+    
 
+}
+
+function print(){
+    text_list= JSON.parse(localStorage.getItem('memo'))
+    console.log(text_list);
+    for(let i = 0 ; i<text_list.length ;i++){
+        let text  = text_list[i].memo;
+        let row = 
+        `<div class="memo">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <div >${text}</div>
+        </div>
+        `;
+        
+        do_list.innerHTML +=row;
+    }
+}
+
+
+function replace(){
+    localStorage.removeItem('memo');
+    localStorage.setItem('memo',JSON.stringify(text_list));
 }
 
