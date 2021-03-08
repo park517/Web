@@ -16,18 +16,19 @@ window.addEventListener("keydown",(e)=>{
 function input(){
     let text = prompt("할 일을 입력해주세요!");
     
-    console.log(text);
-   
-    let row = 
-    `<div class="memo">
-    <input type="checkbox" name="checkbox" id="checkbox">
-    <div >${text}</div>
-    </div>
-    `;
+   if(text!=null){
+        let row = 
+        `<div class="memo">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <div >${text}</div>
+        </div>
+        `;
 
-    do_list.innerHTML +=row;
-    text_list.push({'memo' : text});
-    localStorage.setItem('memo',JSON.stringify(text_list));
+        do_list.innerHTML +=row;
+        text_list.push({'memo' : text});
+        localStorage.setItem('memo',JSON.stringify(text_list));
+   }
+  
     
 } 
 function remove_lastItem(){
@@ -56,13 +57,11 @@ function remove_select(){
     if(remove_confirm) {
    
         for(let i =liLen ; i>=0;i--){
+             
             if(checkbox_list[i].checked==true) {
                 text_list.splice(i,1);
-                console.log("i : "+i);
                 do_list.removeChild(memo_list[i]);
-                console.log(i+"번째 내용 삭제");
-                
-                console.log(text_list);
+          
             }
         }
         replace();
