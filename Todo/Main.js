@@ -2,15 +2,16 @@
 const btn_input = document.getElementById('.btn_input');
 const do_list = document.getElementById('do_list');
 let text_list =[];
+const i =0;
+
 window.addEventListener("keydown",(e)=>{
-  if(e.keyCode==13) input();
-});
-
-if(localStorage.getItem('memo')!=null){
-    print();
-}
-
-let i =0;
+    if(e.keyCode==13) input();
+  });
+  
+  if(localStorage.getItem('memo')!=null){
+      print();
+  }
+  
 
 function input(){
     let text = prompt("할 일을 입력해주세요!");
@@ -23,13 +24,11 @@ function input(){
     <div >${text}</div>
     </div>
     `;
-    // i++;
+
     do_list.innerHTML +=row;
     text_list.push({'memo' : text});
     localStorage.setItem('memo',JSON.stringify(text_list));
-    console.log(JSON.parse(localStorage.getItem('memo')))
     
-
 } 
 function remove_lastItem(){
 
@@ -48,12 +47,11 @@ function remove_lastItem(){
 
 }
 
-
 function remove_select(){
     let memo_list =document.querySelectorAll('.do_list>div');
     let checkbox_list = document.querySelectorAll('.do_list > div >#checkbox');
-    console.log("첵박 리스트 길이  : "+checkbox_list.length);
-    var liLen = checkbox_list.length-1;
+   
+    let liLen = checkbox_list.length-1;
     let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
     if(remove_confirm) {
    
@@ -68,22 +66,15 @@ function remove_select(){
             }
         }
         replace();
-      
     }
    
-    
-
 }
-
 function remove_all(){
     let remove_confirm  = confirm("정말로 삭제 하시겠습니까?");
     if(remove_confirm) {
          do_list.innerHTML ="";
          localStorage.removeItem('memo');
     }
-    
-    
-
 }
 
 function print(){
@@ -101,7 +92,6 @@ function print(){
         do_list.innerHTML +=row;
     }
 }
-
 
 function replace(){
     localStorage.removeItem('memo');
