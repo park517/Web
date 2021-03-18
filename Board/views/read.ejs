@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/style/read.css">
+        <title>글쓰기</title>
+    </head>
+    <body>
+            <div id="list" , class="<%=list[0].password%>"></div>
+            <div class="content">
+                <h2>게시물 보기</h2>
+
+                <div class="input_type">  
+                       <label id="label_title" > 제목</label>
+                      <input readonly type='text' name="title" value="<%=list[0].title%>">
+                </div>
+
+                <div class="input_type">  
+                    <label > 작성자</label>
+                   <input readonly type='text' name="name" value="<%=list[0].name%>">
+             </div>
+
+
+                <div class="input_type">  
+                    <label > 내용</label>
+                    <textarea readonly name="content" id="content" cols="70" rows="20"><%=list[0].context%></textarea>
+                </div>
+                <div class="btn">
+                    <!-- onClick="location.href='/read/update/<%=list[0].number%>'"  -->
+                    <button class ='<%=list[0].number%>' id ="update" name="123" >수정</button>
+                    <button id ="delete" >삭제</button>
+
+                </div>
+               
+            </div>
+
+
+    
+
+      <script src="/js/read.js"></script>  
+      
+    </body>
+</html>
