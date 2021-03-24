@@ -1,42 +1,45 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/style/read.css">
         <title>글쓰기</title>
     </head>
     <body>
-            <div id="list" , class="<%=list[0].password%>"></div>
-            <div class="content">
-                <h2>게시물 보기</h2>
+        <div id="list" ,="," class="<%=list[0].password%>"></div>
+        <div class="content">
+            <h2>게시물 보기</h2>
 
-                <div class="input_type">  
-                       <label id="label_title" > 제목</label>
-                      <input readonly type='text' name="title" value="<%=list[0].title%>">
-                </div>
-
-                <div class="input_type">  
-                    <label > 작성자</label>
-                   <input readonly type='text' name="name" value="<%=list[0].name%>">
-             </div>
-
-
-                <div class="input_type">  
-                    <label > 내용</label>
-                    <textarea readonly name="content" id="content" cols="70" rows="20"><%=list[0].context%></textarea>
-                </div>
-                <div class="btn">
-                    <!-- onClick="location.href='/read/update/<%=list[0].number%>'"  -->
-                    <button class ='<%=list[0].number%>' id ="update" name="123" >수정</button>
-                    <button id ="delete" >삭제</button>
-
-                </div>
-               
+            <div class="input_type">
+                <label id="label_title">
+                    제목</label>
+                <input readonly="readonly" type='text' name="title" value="<%=list[0].title%>">
             </div>
 
+            <div class="input_type">
+                <label >
+                    작성자</label>
+                <input readonly="readonly" type='text' name="name" value="<%=list[0].writer%>">
+            </div>
 
-    
+            <div class="input_type">
+                <label >
+                    내용</label>
+                <textarea readonly="readonly" name="content" id="content" cols="70" rows="20"><%=list[0].context%></textarea>
+            </div>
 
-      <script src="/js/read.js"></script>  
-      
-    </body>
-</html>
+            <div class="btn">
+                <button class='<%=list[0].id%>' id="update" name="123">수정</button>
+                <button id="delete">삭제</button>
+            </div>
+        </div>
+
+        <footer>
+            <%- include('show')%>
+            </footer>
+
+            <script src="/js/read.js"></script>
+
+        </body>
+    </html>

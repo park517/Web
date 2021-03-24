@@ -1,19 +1,25 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/style/board.css">
         <title>문의 게시판</title>
+
     </head>
     <body>
         <div class="head">
             <h2>예제 게시판!!</h2>
             <p>CRUD 예제 익명 게시판 입니다용!</p>
         </div>
-        
+
         <div class="content">
-            <table border='1'>
+            <table border='1' id="list">
                 <colgroup>
-                    <col width='60'><col width='400'><col width='60'><col width='100'>
+                    <col style="width: 10%;">
+                    <col style="width: 50%;">
+                    <col style="width: 20%;">
+                    <col style="width: 20%;">
                 </colgroup>
                 <thead>
                     <tr>
@@ -23,24 +29,27 @@
                         <th>작성일</th>
                     </tr>
                 </thead>
-                
-                    <tbody id = "list">
-                        
-                        <% for(i = 0; i < list.length; i++) { %>
-                            <tr>
-                                <td name ="order"><%=i+1 %></td>
-                                <td><a href="/read/<%=list[i].number %>"><%=list[i].title %></a></td>
-                                <td name = "name"><%=list[i].name%></td>
-                                <td><%=list[i].date%> </td>
-                            </tr>
-                        <% } %>
-                    </tbody>
-                   
+
+                <tbody >
+
+                    <% for(i = 0; i < list.length; i++) { %>
+                        <tr>
+                            <td name="order"><%=i+1 %></td>
+                            <td>
+                                <a href="/read/<%=list[i].id %>"><%=list[i].title %></a>
+                            </td>
+                            <td name="name"><%=list[i].writer%></td>
+                            <td><%=list[i].date%>
+                            </td>
+                        </tr>
+                    <% } %>
+                </tbody>
+
             </table boader='1'>
-            
-          <button id="btn_write" onclick="location.href='../write'">글쓰기</button>
+
+            <button id="btn_write" onclick="location.href='../write'">글쓰기</button>
         </div>
-        
+
         <script src="/js/board.js"></script>
     </body>
 </html>

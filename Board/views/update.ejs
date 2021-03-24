@@ -1,6 +1,8 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/style/update.css">
         <title>글쓰기</title>
     </head>
@@ -16,7 +18,7 @@
 
                     <div class="input_type">  
                         <label>닉네임</label>
-                        <input readonly name = "name" value="<%=list[0].name%>" type="text"> 
+                        <input readonly name = "writer" value="<%=list[0].writer%>" type="text"> 
                     </div>
 
                     <div class="input_type">  
@@ -25,7 +27,7 @@
                     
                     </div>
 
-                    <button name="number" value="<%=list[0].number%>" id='btn_submit' type='submit'>수정하기</button>
+                    <button name="id" value="<%=list[0].id%>" id='btn_submit' type='submit'>수정하기</button>
             </div>
         </form>
         

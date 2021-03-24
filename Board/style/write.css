@@ -7,6 +7,7 @@ h2 {
 }
 
 .content {
+    font-family: 'Nanum Gothic', sans-serif;
     padding: 20px;
     border: rgb(88, 86, 86) solid 2px;
     font-size: 30px;
@@ -45,6 +46,7 @@ h2 {
 }
 
 .input_type textarea{
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 20px;
     width: 400px;
     margin-left: 160px;
@@ -58,4 +60,73 @@ h2 {
     border-radius: 20px;
     font-size: 20px;
     width: 100px;
+}
+
+
+@media(min-width: 320px) and (max-width: 480px){
+
+
+    h2 {
+        text-align: center;
+        width: 100%;
+        border-bottom: 2px solid lightgray;
+        padding-bottom: 10px;
+    }
+    
+    .content {
+        height: 100%;
+        border: rgb(88, 86, 86) solid 2px;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 390px;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    
+    .input_type {
+        border-bottom: 1px solid lightgray;
+        width: 412px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        
+    }
+  
+    
+    #label_title {
+        margin-right: 20px;
+    }
+    
+    .input_type input{
+        font-size: 15px;
+        width: 200px;
+        margin-left: 50px ;
+    }
+    
+    .input_type textarea{
+        font-weight: bold;
+        font-size: 15px;
+        width: 300px;
+        margin-left: 30px;
+        resize: none;
+    }
+    
+    
+    
+    #btn_submit{
+        margin-top: 30px;
+        border-radius: 20px;
+        font-size: 20px;
+        width: 100px;
+        
+    }
+    
+    
+
+
 }

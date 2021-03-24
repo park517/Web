@@ -1,0 +1,65 @@
+
+.sub_content {
+    padding: 20px;
+    border: rgb(88, 86, 86) solid 2px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+label {
+    font-size: 15px;
+}
+
+
+
+
+#text {
+    margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.show_sub_board{
+    width: 100%;
+    display : flex;
+    flex-direction: column;
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+    margin-bottom: 10px;
+}
+
+.sub_board {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#sub_writer {
+    margin-top: 10px;
+}
+#sub_text {
+    font-size: 20px;
+}
+.sub_content input{
+    width: 130px;   
+}
+
+.btn {
+    margin-top: 20px;
+    display: flex;
+    
+}
+#btn_delete {
+    margin-left: 20px;
+}
+@media(min-width: 320px) and (max-width: 480px){
+
+
+}

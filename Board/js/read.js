@@ -4,6 +4,7 @@ const list = document.getElementById('list');
 let number = btn_update.className;
 const db_password =list.className;
 
+
 btn_update.addEventListener('click',function(){
     if(db_password === null){
     alert("수정하시겠습니까?");
