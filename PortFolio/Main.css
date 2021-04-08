@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-image: url("img/gunlogo_3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 910px;
+}
+.baner {
+    z-index: 1;
+    opacity: 0.5;
+    width: 100%;
+    background-color: rgb(218, 223, 224);
+    height: 70px;
+    position: fixed;
+}
+
+#user_img {
+    margin-left: 100px;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 80px;
+
+}
+#baner_list {
+    padding: 0;
+    align-items: center;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#baner_list li {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    list-style-type: none;
+    float: left;
+    margin-left: 100px;
+}
+
+#about_me {
+    display: flex;
+    background-color: rgb(217, 232, 242);
+    height: 700px;
+    align-items: center;
+    height: 950px;
+}
+
+.about_contents {
+    margin-left: 300px;
+}
+.about_contents li {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#skiles {
+    display: flex;
+    align-items: center;
+    height: 950px;
+    background-color: white;
+}
+
+.front_end {
+    height: 800px;
+    text-align: center;
+}
+
+.back_end {
+    height: 800px;
+    text-align: center;
+
+}
+
+.Language {
+    display: flex;
+    margin-left: 200px;
+    height: 120px;
+    width: 500px;
+    margin-top: 70px;
+}
+.Language h2 {
+    margin: 0;
+}
+
+.Language p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: auto;
+    font-size: 15px;
+
+}
+
+.Language progress {
+
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.skile_info {
+    margin-left: 50px;
+}
+
+#projects {
+    display: flex;
+    align-items: center;
+    height: 950px;
+    background-color: white;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(83, 83, 83);
+}
+#contact h1 {
+    color: white;
+    font-size: 60px;
+    border-bottom: 2px solid white;
+}
+
+.contact_list {
+    color: white;
+    font-size: 100px;
+
+}
+
+.contact_list a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+#project {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.project_list {
+
+
+    margin-right: 100px;
+    padding: 20px;
+    width: 850px;
+    display: flex;
+    height: 500px;
+}
+
+.project_image {
+    
+    width: 300px;
+    height: 500px;
+}
+
+.project_info {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(191, 218, 224);
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+}
+
+/* 브라우저 마진과 패딩 리셋 */
+
+
+/* INPUT 가리기 */
+
+
+.section input[id*="slide"] {
+    display: none;
+}
+.section .slidewrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+.section .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all 0.5s;
+}
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+
+.section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.section .slidelist .project_list {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 1.6;
+    text-align: center;
+}
+.section .slidelist .project_list h3 {
+    font-size: 36px;
+    color: #fff;
+    transform: translateY(30px);
+    transition: all 0.5s;
+}
+.section .slidelist .project_list p,br {
+
+    transform: translateY(30px);
+    transition: all 0.5s;
+}
+
+.project_contents {
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+.project_contents p {
+    
+}
+
+.project_title p {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+/* input에 체크되면 슬라이드 효과 */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(0%);
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(-100%);
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(-200%);
+}
+
+/* input에 체크되면 텍스트 효과 */
+.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .project_list h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .project_list p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .project_list h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .project_list p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .project_list h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .project_list p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+/* 좌,우 슬라이드 버튼 */
+.slide-control > div {
+    display: none;
+}
+.section .left {
+    left: 30px;
+    background: url("./img/left.png") center center / 100% no-repeat;
+}
+.section .right {
+    right: 30px;
+    background: url("./img/right.png") center center / 100% no-repeat;
+}
+.section input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {
+    display: block;
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {
+    display: block;
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {
+    display: block;
+}
+
+/* 페이징 */
+.slide-pagelist {
+    text-align: center;
+    padding: 20px;
+}
+.slide-pagelist > li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.slide-pagelist > li > label {
+    display: block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    background: #ccc;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {
+    background: #999;
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {
+    background: #999;
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {
+    background: #999;
+}
