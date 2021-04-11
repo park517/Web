@@ -1,0 +1,71 @@
+.form_wrap {
+    margin: auto;
+    width: 500px;
+
+}
+
+.write_form h1 {
+
+    text-align: center;
+}
+
+.write_form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.write_form input,textarea {
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    resize: none;
+
+}
+
+#input_context {
+	font-weight :bold;
+	text-align: left;
+	
+}
+
+textarea,input {
+
+}
+
+
+
+.comment_form {
+    
+    margin: auto;
+    width: 500px
+}
+.comment_input {
+    border: 1px solid black;
+}
+#comment {
+    display: inline;
+    font-size: 15px;
+    
+}
+.comment {
+    border-bottom: 1px solid black;
+    
+}
+.comment_output {
+    
+    display: inline;
+    font-size: 15px;
+    
+}
+.input {
+   border-bottom: 1px solid black;
+   margin-top: 10px;
+   display: flex;
+}
+
+.input button {
+    height: 25px;
+}
+
+

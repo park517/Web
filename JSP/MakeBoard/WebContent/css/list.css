@@ -1,0 +1,56 @@
+.board {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.table-responsive h1 {
+    background-color: #9fd7f1;
+    color: #ffffff;
+    text-shadow: 4px 4px 0px #bdbdbd;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#btn_login {
+	margin-top: 20px;
+}
+
+.pagination a {
+    display:inline-block;
+    margin-right:5px;
+    cursor:pointer;
+    height: 35px;
+    font-size: 15px;
+    
+    }
+
+.pagination {
+  width: 500px;
+       
+}
+.table {
+	font-size: 18px;
+    margin-bottom: 50px;
+}   
+    
+.table-responsive ul {
+	margin : auto;
+	
+}
+button { 
+
+    height: 35px;
+    font-size: 15px;
+    width: 100px;
+ 
+}
+.btn {
+    margin-right: 20px;
+    padding: 0px;
+    display:inline-block;
+    float: right;
+
+}
